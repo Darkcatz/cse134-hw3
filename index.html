@@ -5,8 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="This is my personal portfolio site showcasing my work, experience, and skills.">
         <meta name="keywords" content="portfolio, web developer, HTML, CSS, JavaScript, personal website">
+
         <title>Andrew Zhao</title>
+
         <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     </head>
     <body>
         <noscript><p>Please enable JavaScript</p></noscript>
@@ -14,7 +21,7 @@
             <img src="imgs/favicon-32x32.png" alt="logo">
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
@@ -24,20 +31,22 @@
         </header>
         <hr>
         <main>
-            <h1>Andrew Zhao</h1>
-            <picture>
-                <source srcset="imgs/me.JPG" media="(min-width: 2000px)">
-                <img src="imgs/smallerme.jpg" alt="Fallback image">
-            </picture>
+            <hero-image>
+                <h1>Andrew Zhao</h1>
+                <picture>
+                    <source srcset="imgs/me.JPG" media="(min-width: 2000px)">
+                    <img src="imgs/smallerme.jpg" alt="Fallback image">
+                </picture>
+            </hero-image>
             <hr>
-            <article>
+            <about-me>
                 <hgroup>
                     <h2>About me</h2>
                     <p>A little summary of me :D</p>
                 </hgroup>
 
                 <p>
-                    <code>helloworld()</code> This section is going to be about <strong>ME</strong>, <em>all about me</em>. However I think at this point in time im not really <b>entirely</b> sure
+                    This section is going to be about <strong>ME</strong>, <em>all about me</em>. However I think at this point in time im not really <b>entirely</b> sure
                     what to write for this section. So like im just going to put some <i>placeholder</i> text down for now. Though I should also
                     put some small things about me huh. Well I do like to eat, game, and create things. I do hope that this site goes according
                     to my vision. If not, well oh well.
@@ -56,9 +65,9 @@
                         <cite>"Mae West Quotes." BrainyQuote.com. BrainyMedia Inc, 2025. 14 July 2025.<a href="https://www.brainyquote.com/quotes/mae_west_109701">https://www.brainyquote.com/quotes/mae_west_109701</a></cite>
                     </figcaption>
                 </figure>
-            </article>
+            </about-me>
             <hr>
-            <div>
+            <res-proj-box>
                 <article>
                     <h3>Resume</h3>
                     <p>
@@ -73,7 +82,7 @@
                     <p>While you are here, you might as well look at some of the other work i've done</p>
                     <a href="projects.html">Click Me!</a>
                 </article>
-            </div>
+            </res-proj-box>
         </main>
         <hr>
         <footer>
