@@ -11,7 +11,10 @@
     --body-bg-color:#473b2c;
     --sub-section-bg-color: #756352;
     --accent-color: #fac458;
+    --strong-color: #fac458;
+    --em-color: #e8dcc0;
     --text-font-size: 1.2rem;
+    --content-text-color:rgb(255, 252, 239);
 }
 
 * {
@@ -103,7 +106,7 @@ header {
                 }
 
                 /* Active page indicator */
-                &:has(a[href="index.html"]) a{
+                &.active a{
                     background-color: rgba(255, 255, 255, 0.2);
                     color: var(--nav-text-hover);
                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -218,12 +221,12 @@ main{
             text-align: justify;
 
             strong, b {
-                color: #fac458;
+                color: var(--strong-color);
                 font-weight: 600;
             }
 
             em, i {
-                color: #e8dcc0;
+                color: var(--em-color);
                 font-style: italic;
             }
         }
@@ -250,14 +253,14 @@ main{
                 &::before {
                     content: open-quote;
                     font-size: 1.5rem;
-                    color: #fac458;
+                    color: var(--accent-color);
                     line-height: 0;
                 }
 
                 &::after {
                     content: close-quote;
                     font-size: 1.5rem;
-                    color: #fac458;
+                    color: var(--accent-color);
                     line-height: 0;
                 }
             }
@@ -269,7 +272,7 @@ main{
                 
 
                 a {
-                    color: #fac458;
+                    color: var(--accent-color);
                     /* text-decoration: none; */
                     transition: opacity var(--transition-speed) ease;
 
